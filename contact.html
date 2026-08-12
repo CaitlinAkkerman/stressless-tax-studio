@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Stress(Less) Tax Studio</title>
+  <meta name="description" content="Ready to stress less about taxes? Book a free consultation with Stress(Less) Tax Studio." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-contact">
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <span class="script-name">Stress(Less)</span>
+      <span class="studio-text">Tax Studio</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Consult</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <p class="section-label reveal">Let's Connect</p>
+      <h1 class="section-title reveal" style="font-size: clamp(2.4rem, 5vw, 3.5rem);">
+        Ready to <span class="script">Stress Less?</span>
+      </h1>
+      <p class="section-subtitle reveal" style="margin: 1rem auto 0; text-align: center;">
+        Book a free 30-minute consultation. No pressure, no commitments — just a real conversation about how I can help.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="why">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info reveal">
+          <h3>Get in Touch</h3>
+          <p>I'd love to hear from you. Reach out however works best for you.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Great Falls, MT<br>Virtual clients welcome nationwide!</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>406.899.9699<br>Available Mon–Fri, 9am–5pm</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>caitlin.stressless@zohomail.com<br>I respond within 1 business day</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday – Friday: 9am – 5pm<br>Tax season: extended hours available</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; padding: 1.75rem; background: var(--tiffany-pale); border-radius: var(--radius); border-left: 4px solid var(--tiffany);">
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--charcoal);">Free 30-Min Consultation</h4>
+            <p style="font-size: 0.88rem; color: #666;">I offer a complimentary introductory call for all new clients. Use the form to request yours — or email me directly. No awkward sales pitches. Pinky promise.</p>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form reveal" data-delay="100">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--charcoal);">Send a Message</h3>
+          <p style="font-size: 0.88rem; color: #999; margin-bottom: 2rem;">Fill out the form and I'll be in touch within one business day.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="jane@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" placeholder="(555) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">What Can I Help You With?</label>
+              <select id="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="individual">Individual Tax Return</option>
+                <option value="freelance">Freelancer / Self-Employed Return</option>
+                <option value="business">Small Business Tax</option>
+                <option value="bookkeeping">Bookkeeping</option>
+                <option value="planning">Tax Planning &amp; Strategy</option>
+                <option value="irs">IRS Notice / Problem</option>
+                <option value="consultation">Free Consultation (Not Sure Yet)</option>
+                <option value="other">Other / Multiple Services</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Me a Little About Your Situation</label>
+              <textarea id="message" placeholder="What's going on? Where are you feeling stuck? What do you wish someone would just explain to you? No such thing as TMI here." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="referral">How Did You Hear About Me? (Optional)</label>
+              <input type="text" id="referral" placeholder="Google, Instagram, referral from a friend, divine intervention..." />
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 0.95rem;">Send Message →</button>
+          </form>
+
+          <div id="formSuccess" class="form-success">
+            <div style="font-size: 3.5rem; margin-bottom: 1rem;">🎉</div>
+            <h3 style="font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.75rem;">Message received!</h3>
+            <p style="color: #666; font-size: 0.95rem;">I'll be in touch within one business day. In the meantime, feel free to take a deep breath. You're already doing great just by reaching out.</p>
+            <p style="margin-top: 1.5rem;"><a href="index.html" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.65rem 1.6rem;">← Back to Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ TEASER -->
+  <section style="background: var(--off-white); padding: 5rem 2rem;">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 3rem;">
+        <p class="section-label">Quick Answers</p>
+        <h2 class="section-title">Common Questions <span class="script">Answered</span></h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 860px; margin: 0 auto;">
+        <div class="service-card reveal" data-delay="0" style="padding: 1.75rem;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--charcoal);">Do you work with clients virtually?</h4>
+          <p style="font-size: 0.875rem;">Absolutely. I work with clients nationwide via secure document sharing and video calls. Your location doesn't have to limit your options.</p>
+        </div>
+        <div class="service-card reveal" data-delay="100" style="padding: 1.75rem;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--charcoal);">When should I reach out?</h4>
+          <p style="font-size: 0.875rem;">Honestly? Now. Even outside of tax season, planning ahead is how you save the most. I accept new clients year-round.</p>
+        </div>
+        <div class="service-card reveal" data-delay="200" style="padding: 1.75rem;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--charcoal);">My taxes are a mess. Is that okay?</h4>
+          <p style="font-size: 0.875rem;">That's kind of my specialty. I don't judge — I just help. Bring me the shoebox full of receipts if you need to. I've seen worse.</p>
+        </div>
+        <div class="service-card reveal" data-delay="300" style="padding: 1.75rem;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--charcoal);">What makes you different?</h4>
+          <p style="font-size: 0.875rem;">I genuinely care. I explain things clearly. And I don't disappear after April 15th. I'm in your corner all year, not just during tax season.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="script-name">Stress(Less)</span>
+          <span class="studio-text">Tax Studio</span>
+          <p>Providing tax services designed to reduce stress, not create it. I handle the numbers so you can handle the things that actually matter.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Individual Tax Returns</a></li>
+            <li><a href="services.html">Small Business Tax</a></li>
+            <li><a href="services.html">Tax Planning</a></li>
+            <li><a href="services.html">Bookkeeping</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h5>Get in Touch</h5>
+          <p>📍 Great Falls, MT<br>📞 406.899.9699<br>✉️ caitlin.stressless@zohomail.com<br>🕐 Mon–Fri, 9am–5pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Stress(Less) Tax Studio. All rights reserved.</p>
+        <p>Tax help that feels less overwhelming ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
