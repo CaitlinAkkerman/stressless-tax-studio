@@ -519,13 +519,13 @@ section { padding: 6rem 2rem; }
   white-space: nowrap; pointer-events: none;
 }
 .cta-banner h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   color: var(--white);
   margin-bottom: 1rem;
 }
 .cta-banner p {
   color: rgba(255,255,255,0.85);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   max-width: 540px;
   margin: 0 auto 2.5rem;
 }
