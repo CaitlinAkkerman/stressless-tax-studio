@@ -47,7 +47,22 @@ const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    form.style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+      .then((response) => {
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        } else {
+          alert('Something went wrong sending your message — please try emailing us directly instead.');
+        }
+      })
+      .catch(() => {
+        alert('Something went wrong sending your message — please try emailing us directly instead.');
+      });
   });
 }
